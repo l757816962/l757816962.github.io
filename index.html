@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" />
     <title>凌紫文</title>
+    <script type="text/javascript">
+    if (/Android|webOS|iPhone|ipod|BalckBerry/i.test(navigator.userAgent)) {
+      window.location.href = "mobile.html";
+      console.log(
+        /Android|webOS|iPhone|ipod|BalckBerry/i.test(navigator.userAgent),
+        "移动端"
+      );
+    } else {
+      window.location.href = "index.html";
+      console.log(
+        /Android|webOS|iPhone|ipod|BalckBerry/i.test(navigator.userAgent),
+        "pc端"
+      );
+    }
+    </script>
     <style>
       a {
         color: white;
@@ -71,17 +86,4 @@
       <p style="color: white; font-size: large">联系方式</p>
     </div>
   </body>
-  <script>
-    function browserRedict(pcurl, moburl) {
-      let userAgentInfo = navigator.userAgent.toLowerCase();
-      let device =
-        /ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/;
-      if (device.test(userAgentInfo)) {
-        window.location.href = "mobile.html";
-      } else {
-        window.location.href = "index.html";
-      }
-    }
-    browserRedict("pc.example.com", "mob.example.com");
-  </script>
 </html>
