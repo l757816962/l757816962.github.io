@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>幸福时刻</title>
+    <style>
+      .flexr {
+        display: flex;
+      }
+      .flex {
+        display: flex;
+        flex-direction: column;
+      }
+      .backg {
+        background-color: rgb(255, 255, 255);
+      }
+      .mglr8 {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .mgr8 {
+        margin-right: 10px;
+      }
+      .mgt8 {
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .textc {
+        text-align: center;
+      }
+      .text {
+        /* 粗体|14号字|1.8倍行距|宋体 */
+        font: bold 16px/180% \5B8B\4F53;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      } /* 默许超链接字体色彩为黑色 */
+      a:hover {
+        color: rgb(130, 247, 255);
+      } /* 默认超链接字体悬停时色彩为蓝色 */
+      .lengjiao {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+      } /* 圆滑边角 */
+      .yinying {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      /* *{border: 1px solid black;} */
+    </style>
+  </head>
+  <body class="flex" style="margin: 0px; padding: 10px; background-color: #eee">
+    <!-- 整体块 -->
+    <div class="flex">
+      <!-- 标题栏 -->
+      <div class="backg mglr8 yinying lengjiao" style="height: 60px">
+        <p
+          class="textc text"
+          style="align-items: center; letter-spacing: 5px; text-align: center"
+        >
+          大浩和涵涵的成长历程
+        </p>
+      </div>
+      <!-- 宝宝图片区1 -->
+      <div class="flexr mgt8" style="height: 205px">
+        <!-- 宝宝图片12 -->
+        <div class="" style="height: 200px; width: 50%">
+          <img
+            src="./Picture/照片素材/宝宝.jpg"
+            alt=""
+            height="200px"
+            width="156"
+          />
+        </div>
+        <div class="" style="height: 200px; width: 50%; margin-left: 6px">
+          <img
+            src="./Picture/照片素材/宝宝3.jpg"
+            alt=""
+            height="200px"
+            width="149"
+          />
+        </div>
+      </div>
+      <!-- 宝宝图片区2 -->
+      <div class="flexr mgt8" style="height: 205px">
+        <!-- 宝宝图片34 -->
+        <div class="" style="height: 200px; width: 50%">
+          <img
+            src="./Picture/照片素材/浩浩.jpg"
+            alt=""
+            height="200px"
+            width="156"
+          />
+        </div>
+        <div class="" style="height: 200px; width: 50%; margin-left: 6px">
+          <img src="./Picture/涵涵.jpg" alt="" height="200px" width="149" />
+        </div>
+      </div>
+      <div style="height: 30px">
+        <p class="text textc" style="margin-top: 5px">
+          <a href="./Picture/mess.jpg">更多</a>
+        </p>
+      </div>
+      <!-- 标题栏 -->
+      <div class="backg mgt8 yinying lengjiao" style="height: 60px">
+        <p
+          class="textc text"
+          style="align-items: center; letter-spacing: 5px; text-align: center"
+        >
+          我和美女の照片
+        </p>
+      </div>
+      <!-- 我和mom图片区 -->
+      <div class="flexr mgt8" style="height: 205px">
+        <!-- 图片12 -->
+        <div class="" style="height: 200px; width: 50%">
+          <img src="./Picture/我的照片.jpg" alt="" height="200px" width="156" />
+        </div>
+        <div class="" style="height: 200px; width: 50%; margin-left: 6px">
+          <img
+            src="./Picture/照片素材/妈妈.jpg"
+            alt=""
+            height="200px"
+            width="149"
+          />
+        </div>
+      </div>
+      <div style="height: 30px">
+        <p class="text textc" style="margin-top: 5px">
+          <a href="./Picture/mess.jpg">更多</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

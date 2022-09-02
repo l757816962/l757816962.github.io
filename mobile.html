@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>移动端</title>
+    <style>
+      .flexr {
+        display: flex;
+      }
+      .flex {
+        display: flex;
+        flex-direction: column;
+      }
+      .backg {
+        background-color: rgb(255, 255, 255);
+      }
+      .mglr8 {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .mgr8 {
+        margin-right: 10px;
+      }
+      .mgt8 {
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .textc {
+        text-align: center;
+      }
+      .text {
+        /* 粗体|14号字|1.8倍行距|宋体 */
+        font: bold 14px/180% \5B8B\4F53;
+      }
+      a {
+        color: rgb(0, 0, 0);
+      } /* 默许超链接字体色彩为黑色 */
+      a:hover {
+        color: rgb(130, 247, 255);
+      } /* 默认超链接字体悬停时色彩为蓝色 */
+      .lengjiao {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+      } /* 圆滑边角 */
+      .yinying {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+
+      .buttonClass {
+        font-size: 14px;
+        font-size: large;
+        font-family: "宋体";
+        letter-spacing: 3px;
+        width: 100px;
+        height: 40px;
+        border-width: 1px;
+        color: #fff;
+        border-color: #84bbf3;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        box-shadow: inset 0px 1px 0px 0px #dcecfb;
+        text-shadow: inset 0px 1px 0px #528ecc;
+        background: linear-gradient(#bddbfa, #80b5ea);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* 超链接去下划线 */
+        text-decoration: none;
+      }
+      .buttonClass:hover {
+        background: linear-gradient(#80b5ea, #bddbfa);
+      }
+      /* 布局显示黑框 */
+      /* *{border: 1px solid black;} */
+    </style>
+  </head>
+  <body
+    class="flex"
+    style="
+      margin: 0px;
+      padding: 10px;
+      background-color: #eee;
+      /* height: 100vh */
+    "
+  >
+    <!-- 整体块 -->
+    <div class="flex">
+      <!-- 头像栏 -->
+      <div class="flexr backg mglr8 lengjiao yinying" style="height: 100px">
+        <div
+          class="flex mgr8"
+          style="
+            justify-content: center;
+            align-items: center;
+            margin-left: 35px;
+          "
+        >
+          <img src="./Picture/头像 (圆).png" alt="头像" height="70px" />
+        </div>
+        <div class="flex" style="">
+          <p style="width: 90px; font-size: 12px; margin-top: 30px">
+            帝子不来山鬼哭
+          </p>
+          <p style="font-size: 12px; text-indent: 7em; margin-top: -5px">
+            一天风雨写离骚
+          </p>
+        </div>
+      </div>
+      <!-- 介绍区 -->
+      <div
+        class="flex backg mgt8 lengjiao yinying"
+        style="height: 200px; padding: 8px"
+      >
+        <p class="" style="margin: 3px">你好，欢迎来到我的个人主页</p>
+        <p class="" style="margin: 3px">
+          在这里你能看到我的家庭照片(如果你是我的家人)
+        </p>
+        <p class="" style="margin: 3px">你能在这里品味诗词文章之美</p>
+        <p class="" style="margin: 3px">我也会分享一些个人认为的实用之物</p>
+        <p class="" style="margin: 3px">更多功能正在开发中……</p>
+      </div>
+      <!-- 功能区 -->
+      <div class="flexr">
+        <!-- 功能区(左) -->
+        <div
+          class="flex mgt8"
+          style="
+            width: 50%;
+            height: 150px;
+            justify-content: space-evenly;
+            align-items: center;
+          "
+        >
+          <!-- 功能块 -->
+          <div class="" style="">
+            <p class="text" style="font-size: larger">
+              <!-- <a href="">幸福时刻</a> -->
+              <a href="happday.html" class="buttonClass">幸福时刻</a>
+            </p>
+          </div>
+          <div class="" style="">
+            <p class="text" style="font-size: larger">
+              <a href="culture.html" class="buttonClass">氤氲诗意</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- 功能区(右) -->
+        <div
+          class="flex mgt8"
+          style="
+            width: 50%;
+            height: 150px;
+            justify-content: space-evenly;
+            align-items: center;
+          "
+        >
+          <!-- 功能块 -->
+          <div class="" style="">
+            <p class="text" style="font-size: larger">
+              <a href="" class="buttonClass">好物分享</a>
+            </p>
+          </div>
+          <div class="" style="">
+            <p class="text" style="font-size: larger">
+              <a href="" class="buttonClass">更多功能</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 背景区 -->
+      <div class="backg mgt8 yinying lengjiao" style="height: 200px">
+        <img
+          class="lengjiao"
+          src="./Picture/壁纸2.jpg"
+          alt="背景"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <!-- 结尾区 -->
+      <div class="backg mgt8 lengjiao yinying" style="height: 100px">
+        <p class="textc text">更多功能正在开发中</p>
+        <p class="textc text">联系方式</p>
+      </div>
+    </div>
+  </body>
+</html>
